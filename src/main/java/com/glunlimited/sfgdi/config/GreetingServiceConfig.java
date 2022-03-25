@@ -2,6 +2,7 @@ package com.glunlimited.sfgdi.config;
 
 import com.glunlimited.sfgdi.datasource.FakeDataSource;
 import com.glunlimited.sfgdi.services.ConstructorGreetingService;
+import com.glunlimited.sfgdi.services.PetService;
 import com.glunlimited.sfgdi.services.PropertyInjectedGreetingService;
 import com.glunlimited.sfgdi.services.SetterInjectedGreetingService;
 import org.springframework.beans.factory.annotation.Value;
@@ -35,4 +36,5 @@ public class GreetingServiceConfig {
     SetterInjectedGreetingService setterInjectedGreetingService(){
         return new SetterInjectedGreetingService();
     }
+
 }

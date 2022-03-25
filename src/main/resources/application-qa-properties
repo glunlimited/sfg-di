@@ -1,0 +1,3 @@
+guru.username=superuser-qa
+guru.password=dbPassword-qa
+guru.jdbcurl=someUrlforDB-qa
