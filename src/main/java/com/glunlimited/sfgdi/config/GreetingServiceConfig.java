@@ -7,9 +7,8 @@ import com.glunlimited.sfgdi.services.SetterInjectedGreetingService;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.context.annotation.PropertySource;
 
-@PropertySource("classpath:datasource.properties")
+
 
 @Configuration
 public class GreetingServiceConfig {
@@ -19,7 +18,7 @@ public class GreetingServiceConfig {
         FakeDataSource fakeDataSource = new FakeDataSource();
         fakeDataSource.setUsername(username);
         fakeDataSource.setPassword(password);
-        fakeDataSource.setJdbcurl(password);
+        fakeDataSource.setJdbcurl(jdbcurl);
         return fakeDataSource;
     }
     @Bean
